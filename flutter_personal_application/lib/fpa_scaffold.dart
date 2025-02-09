@@ -7,6 +7,7 @@ class Scaff extends StatefulWidget {
 }
 
 class _Scaff extends State<Scaff> {
+  Widget wid = Column();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,7 @@ class _Scaff extends State<Scaff> {
           TextButton(onPressed: () {}, child: const Text('Contact Me')),
         ],
       ),
-      body: Column()
+      body: wid
     );
   }
 }
