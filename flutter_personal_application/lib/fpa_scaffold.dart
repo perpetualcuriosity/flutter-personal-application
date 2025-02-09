@@ -11,32 +11,14 @@ class _Scaff extends State<Scaff> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('test'),
-        leading: Builder(
-          builder: (context) {
-            return IconButton(
-              icon: const Icon(Icons.menu),
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-            );
-          },
-        ),
-      ),
-      drawer: Drawer(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              OutlinedButton(onPressed: () {}, child: Text('1')),
-              OutlinedButton(onPressed: () {}, child: Text('2')),
-              OutlinedButton(onPressed: () {}, child: Text('3')),
-              OutlinedButton(onPressed: () {}, child: Text('4')),
-              OutlinedButton(onPressed: () {}, child: Text('5'))
-            ],
-          ),
-        ),
+        title: Text('Jash Upadhyay'),
+        actions: [
+          TextButton(onPressed: () {}, child: const Text('Home')),
+          TextButton(onPressed: () {}, child: const Text('Education')),
+          TextButton(onPressed: () {}, child: const Text('Projects')),
+          TextButton(onPressed: () {}, child: const Text('Skills')),
+          TextButton(onPressed: () {}, child: const Text('Contact Me')),
+        ],
       ),
       body: Column()
     );
