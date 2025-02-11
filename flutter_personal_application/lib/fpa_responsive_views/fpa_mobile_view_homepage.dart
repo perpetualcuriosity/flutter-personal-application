@@ -32,7 +32,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.home),
                         SizedBox(width: 8), // Space between icon and text
-                        Text('Home',style: stl),
+                        Text('Home'),
                       ],
                     ),
                   ),
@@ -52,7 +52,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.school),
                         SizedBox(width: 8),
-                        Text('Education',style: stl),
+                        Text('Education'),
                       ],
                     ),
                   ),
@@ -72,7 +72,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.star),
                         SizedBox(width: 8),
-                        Text('Skills',style: stl),
+                        Text('Skills'),
                       ],
                     ),
                   ),
@@ -92,7 +92,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.work),
                         SizedBox(width: 8),
-                        Text('Projects',style: stl),
+                        Text('Projects'),
                       ],
                     ),
                   ),
@@ -112,7 +112,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.contact_mail),
                         SizedBox(width: 8),
-                        Text('Contact',style: stl),
+                        Text('Contact'),
                       ],
                     ),
                   ),
