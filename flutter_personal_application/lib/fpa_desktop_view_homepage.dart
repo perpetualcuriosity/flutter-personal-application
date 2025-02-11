@@ -10,6 +10,17 @@ class _DesktopView extends State<DesktopView>
     @override
     Widget build(BuildContext context)
     {
-      return(Scaffold());
+      return(Scaffold(
+        appBar: AppBar(
+          title: Text('Jash Upadhyay'),
+          actions: [
+            TextButton(onPressed: () {}, child: Text('Home')),
+            TextButton(onPressed: () {}, child: Text('Education')),
+            TextButton(onPressed: () {}, child: Text('Skills')),
+            TextButton(onPressed: () {}, child: Text('Projects')),
+            TextButton(onPressed: () {}, child: Text('Contact')),
+          ],
+        ),
+      ));
     }
 }
