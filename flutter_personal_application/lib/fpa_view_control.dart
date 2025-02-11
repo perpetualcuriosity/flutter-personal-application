@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_personal_application/device_specific_view/fpa_desktop_view_homepage.dart';
-import 'package:flutter_personal_application/device_specific_view/fpa_mobile_view_homepage.dart';
-
+import 'package:flutter_personal_application/fpa_responsive_view/fpa_desktop_view_homepage.dart';
+import 'package:flutter_personal_application/fpa_responsive_view/fpa_mobile_view_homepage.dart';
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
   @override
