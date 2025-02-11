@@ -12,9 +12,9 @@ class DesktopView extends StatefulWidget {
 }
 
 class _DesktopView extends State<DesktopView> {
+  Widget wid = PageHome();
   @override
   Widget build(BuildContext context) {
-    Widget wid = PageHome();
     return (Scaffold(
         appBar: AppBar(
           title: Text('Jash Upadhyay'),
