@@ -10,6 +10,6 @@ class _PageSkills extends State<PageSkills>
     @override
     Widget build(BuildContext context)
     {
-        return Container();
+        return Container(decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.brown,Colors.grey])),);
     }
 }

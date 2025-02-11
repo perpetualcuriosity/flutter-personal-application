@@ -10,6 +10,6 @@ class _PageProjects extends State<PageProjects>
     @override
     Widget build(BuildContext context)
     {
-        return Container();
+        return Container(decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.yellow,Colors.red])),);
     }
 }

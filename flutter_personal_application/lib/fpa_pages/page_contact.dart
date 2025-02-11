@@ -10,6 +10,6 @@ class _PageContact extends State<PageContact>
     @override
     Widget build(BuildContext context)
     {
-        return Container();
+        return Container(decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.green,Colors.blue])),);
     }
 }

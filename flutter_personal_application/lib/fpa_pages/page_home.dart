@@ -10,6 +10,8 @@ class _PageHome extends State<PageHome>
     @override
     Widget build(BuildContext context)
     {
-        return Container();
+        return Container(
+          decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.purple,Colors.red])),
+        );
     }
 }
