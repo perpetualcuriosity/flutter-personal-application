@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_personal_application/pages/page_contact.dart';
+import 'package:flutter_personal_application/pages/page_education.dart';
+import 'package:flutter_personal_application/pages/page_home.dart';
+import 'package:flutter_personal_application/pages/page_projects.dart';
+import 'package:flutter_personal_application/pages/page_skills.dart';
 class MobileView extends StatefulWidget {
   const MobileView({super.key});
   @override
@@ -7,7 +11,7 @@ class MobileView extends StatefulWidget {
 }
 
 class _MobileView extends State<MobileView> {
-  Widget wid = Container();
+  Widget wid = PageHome();
   @override
   Widget build(BuildContext context) {
     return (Scaffold(
@@ -32,7 +36,9 @@ class _MobileView extends State<MobileView> {
                     ),
                   ),
                   onTap: () {
-                    setState(() {});
+                    setState(() {
+                      wid = PageHome();
+                    });
                   },
                 ),
               ),
@@ -50,7 +56,9 @@ class _MobileView extends State<MobileView> {
                     ),
                   ),
                   onTap: () {
-                    setState(() {});
+                    setState(() {
+                      wid = PageEducation();
+                    });
                   },
                 ),
               ),
@@ -68,7 +76,9 @@ class _MobileView extends State<MobileView> {
                     ),
                   ),
                   onTap: () {
-                    setState(() {});
+                    setState(() {
+                      wid = PageSkills();
+                    });
                   },
                 ),
               ),
@@ -86,7 +96,9 @@ class _MobileView extends State<MobileView> {
                     ),
                   ),
                   onTap: () {
-                    setState(() {});
+                    setState(() {
+                      wid = PageProjects();
+                    });
                   },
                 ),
               ),
@@ -104,7 +116,9 @@ class _MobileView extends State<MobileView> {
                     ),
                   ),
                   onTap: () {
-                    setState(() {});
+                    setState(() {
+                      wid = PageContact();
+                    });
                   },
                 ),
               ),

@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_personal_application/pages/page_contact.dart';
+import 'package:flutter_personal_application/pages/page_education.dart';
+import 'package:flutter_personal_application/pages/page_home.dart';
+import 'package:flutter_personal_application/pages/page_projects.dart';
+import 'package:flutter_personal_application/pages/page_skills.dart';
 
 class DesktopView extends StatefulWidget {
   const DesktopView({super.key});
@@ -9,34 +14,44 @@ class DesktopView extends StatefulWidget {
 class _DesktopView extends State<DesktopView> {
   @override
   Widget build(BuildContext context) {
-    Widget wid = Container();
+    Widget wid = PageHome();
     return (Scaffold(
         appBar: AppBar(
           title: Text('Jash Upadhyay'),
           actions: [
             TextButton(
                 onPressed: () {
-                  setState(() {});
+                  setState(() {
+                    wid = PageHome();
+                  });
                 },
                 child: Text('Home')),
             TextButton(
                 onPressed: () {
-                  setState(() {});
+                  setState(() {
+                    wid = PageEducation();
+                  });
                 },
                 child: Text('Education')),
             TextButton(
                 onPressed: () {
-                  setState(() {});
+                  setState(() {
+                    wid = PageSkills();
+                  });
                 },
                 child: Text('Skills')),
             TextButton(
                 onPressed: () {
-                  setState(() {});
+                  setState(() {
+                    wid = PageProjects();
+                  });
                 },
                 child: Text('Projects')),
             TextButton(
                 onPressed: () {
-                  setState(() {});
+                  setState(() {
+                    wid = PageContact();
+                  });
                 },
                 child: Text('Contact')),
           ],
