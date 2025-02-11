@@ -16,7 +16,7 @@ class _MobileView extends State<MobileView> {
   @override
   Widget build(BuildContext context) {
     return (Scaffold(
-        appBar: AppBar(flexibleSpace: Container(decoration: BoxDecoration(gradient: LinearGradient(colors: col)),),title: Text('Jash Upadhyay',style: stl)),
+        appBar: AppBar(iconTheme:IconThemeData(color: Colors.white),flexibleSpace: Container(decoration: BoxDecoration(gradient: LinearGradient(colors: col)),),title: Text('Jash Upadhyay',style: stl)),
         drawer: Drawer(
           backgroundColor: Color(0xff020202),
             child: Center(
@@ -41,6 +41,7 @@ class _MobileView extends State<MobileView> {
                     setState(() {
                       wid = PageHome();
                     });
+                    Navigator.pop(context);
                   },
                 ),
               ),
@@ -61,6 +62,7 @@ class _MobileView extends State<MobileView> {
                     setState(() {
                       wid = PageEducation();
                     });
+                    Navigator.pop(context);
                   },
                 ),
               ),
@@ -81,6 +83,7 @@ class _MobileView extends State<MobileView> {
                     setState(() {
                       wid = PageSkills();
                     });
+                    Navigator.pop(context);
                   },
                 ),
               ),
@@ -101,6 +104,7 @@ class _MobileView extends State<MobileView> {
                     setState(() {
                       wid = PageProjects();
                     });
+                    Navigator.pop(context);
                   },
                 ),
               ),
@@ -121,6 +125,7 @@ class _MobileView extends State<MobileView> {
                     setState(() {
                       wid = PageContact();
                     });
+                    Navigator.pop(context);
                   },
                 ),
               ),
