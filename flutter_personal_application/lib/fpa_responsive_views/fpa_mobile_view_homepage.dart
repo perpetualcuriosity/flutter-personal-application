@@ -16,7 +16,7 @@ class _MobileView extends State<MobileView> {
   @override
   Widget build(BuildContext context) {
     return (Scaffold(
-        appBar: AppBar(flexibleSpace: Container(decoration: BoxDecoration(gradient: LinearGradient(colors: col)),),title: Text('Jash Upadhyay')),
+        appBar: AppBar(flexibleSpace: Container(decoration: BoxDecoration(gradient: LinearGradient(colors: col)),),title: Text('Jash Upadhyay',style: stl)),
         drawer: Drawer(
             child: Center(
           child: Column(
@@ -32,7 +32,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.home),
                         SizedBox(width: 8), // Space between icon and text
-                        Text('Home'),
+                        Text('Home',style: stl),
                       ],
                     ),
                   ),
@@ -52,7 +52,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.school),
                         SizedBox(width: 8),
-                        Text('Education'),
+                        Text('Education',style: stl),
                       ],
                     ),
                   ),
@@ -72,7 +72,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.star),
                         SizedBox(width: 8),
-                        Text('Skills'),
+                        Text('Skills',style: stl),
                       ],
                     ),
                   ),
@@ -92,7 +92,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.work),
                         SizedBox(width: 8),
-                        Text('Projects'),
+                        Text('Projects',style: stl),
                       ],
                     ),
                   ),
@@ -112,7 +112,7 @@ class _MobileView extends State<MobileView> {
                       children: [
                         Icon(Icons.contact_mail),
                         SizedBox(width: 8),
-                        Text('Contact'),
+                        Text('Contact',style: stl),
                       ],
                     ),
                   ),

@@ -19,7 +19,7 @@ class _DesktopView extends State<DesktopView> {
     return (Scaffold(
         appBar: AppBar(
           flexibleSpace: Container(decoration: BoxDecoration(gradient: LinearGradient(colors: col)),),
-          title: Text('Jash Upadhyay'),
+          title: Text('Jash Upadhyay',style: stl),
           actions: [
             TextButton(
                 onPressed: () {
@@ -27,35 +27,35 @@ class _DesktopView extends State<DesktopView> {
                     wid = PageHome();
                   });
                 },
-                child: Text('Home')),
+                child: Text('Home',style: stl)),
             TextButton(
                 onPressed: () {
                   setState(() {
                     wid = PageEducation();
                   });
                 },
-                child: Text('Education')),
+                child: Text('Education',style: stl)),
             TextButton(
                 onPressed: () {
                   setState(() {
                     wid = PageSkills();
                   });
                 },
-                child: Text('Skills')),
+                child: Text('Skills',style: stl)),
             TextButton(
                 onPressed: () {
                   setState(() {
                     wid = PageProjects();
                   });
                 },
-                child: Text('Projects')),
+                child: Text('Projects',style: stl)),
             TextButton(
                 onPressed: () {
                   setState(() {
                     wid = PageContact();
                   });
                 },
-                child: Text('Contact')),
+                child: Text('Contact',style: stl)),
           ],
         ),
         body: wid));
