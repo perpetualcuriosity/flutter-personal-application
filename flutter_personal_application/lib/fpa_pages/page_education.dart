@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_personal_application/global_theme/global_theme.dart';
 class PageEducation extends StatefulWidget
 {
     const PageEducation({super.key});
@@ -10,6 +11,6 @@ class _PageEducation extends State<PageEducation>
     @override
     Widget build(BuildContext context)
     {
-        return Container(decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.purple,Colors.white])),);
+        return Container(decoration: BoxDecoration(gradient: LinearGradient(colors: col)),);
     }
 }
