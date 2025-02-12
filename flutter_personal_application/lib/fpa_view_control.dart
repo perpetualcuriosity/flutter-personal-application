@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_application/fpa_responsive_views/fpa_desktop_view_homepage.dart';
-import 'package:flutter_personal_application/fpa_responsive_views/fpa_mobile_view_homepage.dart';
-
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,7 +21,7 @@ class _HomePage extends State<HomePage> {
           }
           else
           {
-              return MobileView();
+              return DesktopView();
           }
         }
       ),
