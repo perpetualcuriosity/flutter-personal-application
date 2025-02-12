@@ -20,13 +20,13 @@ class _PageHome extends State<PageHome>
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                AnimatedTextKit(
+                  Text('Jash Upadhyay',style: GoogleFonts.sourceCodePro(color: col2,fontWeight: FontWeight.bold,fontSize: 100)),
+                  AnimatedTextKit(
                   animatedTexts: [
                     TyperAnimatedText('Solve.',speed: Duration(milliseconds: 50),textStyle: GoogleFonts.sourceCodePro(color: col2,fontWeight: FontWeight.bold,fontSize: 100)),
                     TyperAnimatedText('Code.',speed: Duration(milliseconds: 50),textStyle: GoogleFonts.sourceCodePro(color: col2,fontWeight: FontWeight.bold,fontSize: 100)),
                     TyperAnimatedText('Transform.',speed: Duration(milliseconds: 50),textStyle: GoogleFonts.sourceCodePro(color: col2,fontWeight: FontWeight.bold,fontSize: 100)),
-                    TyperAnimatedText('Jash Upadhyay, Flutter Developer',speed: Duration(milliseconds: 100),textStyle: GoogleFonts.sourceCodePro(color: col2,fontWeight: FontWeight.bold,fontSize: 100)),
-
+                    TyperAnimatedText('Flutter Developer',speed: Duration(milliseconds: 50),textStyle: GoogleFonts.sourceCodePro(color: col2,fontWeight: FontWeight.bold,fontSize: 100)),
                   ],
                   isRepeatingAnimation: false,
                 )
