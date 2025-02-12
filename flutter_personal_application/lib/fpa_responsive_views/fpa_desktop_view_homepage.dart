@@ -16,48 +16,6 @@ class _DesktopView extends State<DesktopView> {
   Widget wid = PageHome();
   @override
   Widget build(BuildContext context) {
-    return (Scaffold(
-        appBar: AppBar(
-          flexibleSpace: Container(decoration: BoxDecoration(gradient: LinearGradient(colors: col)),),
-          title: Text('Jash Upadhyay',style: stl),
-          actions: [
-            TextButton(
-                onPressed: () {
-                  setState(() {
-                    wid = PageHome();
-                  });
-                },
-                child: Text('Home',style: stl)),
-            TextButton(
-                onPressed: () {
-                  setState(() {
-                    wid = PageEducation();
-                  });
-                },
-                child: Text('Education',style: stl)),
-            TextButton(
-                onPressed: () {
-                  setState(() {
-                    wid = PageSkills();
-                  });
-                },
-                child: Text('Skills',style: stl)),
-            TextButton(
-                onPressed: () {
-                  setState(() {
-                    wid = PageProjects();
-                  });
-                },
-                child: Text('Projects',style: stl)),
-            TextButton(
-                onPressed: () {
-                  setState(() {
-                    wid = PageContact();
-                  });
-                },
-                child: Text('Contact',style: stl)),
-          ],
-        ),
-        body: wid));
+    return Scaffold(body: wid);
   }
 }
