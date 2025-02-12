@@ -20,7 +20,7 @@ class _MainViewController extends State<MainViewController> {
     return Scaffold(
       body: PageView(
         controller: _pageController,
-        scrollDirection: Axis.horizontal, // Enables vertical scrolling
+        scrollDirection: Axis.horizontal, 
         children: const [
           PageHome(),
           PageEducation(),

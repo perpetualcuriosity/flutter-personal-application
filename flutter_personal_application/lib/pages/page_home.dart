@@ -19,20 +19,18 @@ class _PageHome extends State<PageHome> {
         // Background Image
         Positioned.fill(
           child: Image.asset(
-            'lib/assets/cbg.jpg', // Ensure this path is correct
+            'lib/assets/cbg.jpg', 
             fit: BoxFit.cover,
           ),
         ),
-        // Blur Effect
         Positioned.fill(
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10), // Adjust blur intensity
+            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10), 
             child: Container(
-              color: Colors.black.withOpacity(0.55), // Optional overlay tint
+              color: Colors.black.withOpacity(0.55), 
             ),
           ),
         ),
-        // Foreground Content
         Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
