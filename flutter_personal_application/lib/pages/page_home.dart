@@ -1,3 +1,4 @@
+// ignore_for_file: deprecated_member_use
 import 'dart:ui'; // Required for ImageFilter
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -27,7 +28,7 @@ class _PageHome extends State<PageHome> {
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10), // Adjust blur intensity
             child: Container(
-              color: Colors.black.withOpacity(0.2), // Optional overlay tint
+              color: Colors.black.withOpacity(0.55), // Optional overlay tint
             ),
           ),
         ),
