@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_application/global_theme/global_theme.dart';
+import 'package:roulette/roulette.dart';
 class PageSkills extends StatefulWidget
 {
     const PageSkills({super.key});
