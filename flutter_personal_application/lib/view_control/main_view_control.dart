@@ -18,7 +18,7 @@ class _MainViewController extends State<MainViewController> {
     return Scaffold(
       body: PageView(
         controller: _pageController,
-        scrollDirection: Axis.horizontal, 
+        scrollDirection: Axis.vertical, 
         children: const [
           PageHome(),
           PageSkills(),

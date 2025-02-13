@@ -81,26 +81,26 @@ class _PageHome extends State<PageHome>
               ),
               AnimatedTextKit(
                 animatedTexts: [
-                  TyperAnimatedText('Solve.',
-                      speed: Duration(milliseconds: 50),
+                  TypewriterAnimatedText('Solve.',
+                      speed: Duration(milliseconds: 150),
                       textStyle: GoogleFonts.sourceCodePro(
                           color: col2,
                           fontWeight: FontWeight.bold,
                           fontSize: 100)),
-                  TyperAnimatedText('Code.',
-                      speed: Duration(milliseconds: 50),
+                  TypewriterAnimatedText('Code.',
+                      speed: Duration(milliseconds: 150),
                       textStyle: GoogleFonts.sourceCodePro(
                           color: col2,
                           fontWeight: FontWeight.bold,
                           fontSize: 100)),
-                  TyperAnimatedText('Transform.',
-                      speed: Duration(milliseconds: 50),
+                  TypewriterAnimatedText('Transform.',
+                      speed: Duration(milliseconds: 150),
                       textStyle: GoogleFonts.sourceCodePro(
                           color: col2,
                           fontWeight: FontWeight.bold,
                           fontSize: 100)),
-                  TyperAnimatedText('Flutter Developer',
-                      speed: Duration(milliseconds: 50),
+                  TypewriterAnimatedText('Flutter Developer',
+                      speed: Duration(milliseconds: 150),
                       textStyle: GoogleFonts.sourceCodePro(
                           color: col2,
                           fontWeight: FontWeight.bold,
