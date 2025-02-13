@@ -36,6 +36,7 @@ class _PageSkills extends State<PageSkills> {
                 height: 450,
                 width: 450,
                 child: FortuneWheel(
+                  indicators: [],
                   selected: controller.stream,
                   items: [
                     FortuneItem(
