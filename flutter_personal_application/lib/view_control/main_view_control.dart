@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_personal_application/pages/page_contact.dart';
-import 'package:flutter_personal_application/pages/page_education.dart';
 import 'package:flutter_personal_application/pages/page_home.dart';
 import 'package:flutter_personal_application/pages/page_projects.dart';
 import 'package:flutter_personal_application/pages/page_skills.dart';
@@ -23,10 +21,8 @@ class _MainViewController extends State<MainViewController> {
         scrollDirection: Axis.horizontal, 
         children: const [
           PageHome(),
-          PageEducation(),
           PageSkills(),
           PageProjects(),
-          PageContact(),
         ],
       ),
     );
