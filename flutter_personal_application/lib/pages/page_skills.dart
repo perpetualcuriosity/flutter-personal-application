@@ -1,3 +1,5 @@
+
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_application/global_theme/global_theme.dart';
@@ -22,7 +24,7 @@ class _PageSkills extends State<PageSkills> {
           padding: EdgeInsets.all(40),
           margin: EdgeInsets.symmetric(horizontal: 80, vertical: 40),
           decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.6),
+            color: Color(0xff020202),
             borderRadius: BorderRadius.circular(30),
             border: Border.all(color: Colors.white, width: 3),
           ),
