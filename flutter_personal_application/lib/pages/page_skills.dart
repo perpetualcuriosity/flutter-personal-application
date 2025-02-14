@@ -22,7 +22,7 @@ class _PageSkillsState extends State<PageSkills> {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double wheelSize = screenWidth * 0.75; // Scales with screen size
+    double wheelSize = screenWidth * 0.75; 
 
     return Padding(
       padding: const EdgeInsets.all(16),

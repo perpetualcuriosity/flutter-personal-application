@@ -21,7 +21,6 @@ class PageHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Social Links Row (Positioned at Top-Right)
         Positioned(
           top: 10,
           right: 10,
@@ -35,8 +34,6 @@ class PageHome extends StatelessWidget {
             ],
           ),
         ),
-
-        // Centered Content (Name & Animated Text)
         Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -65,16 +62,12 @@ class PageHome extends StatelessWidget {
       ],
     );
   }
-
-  // Helper method to build social buttons
   Widget _buildSocialButton(Uri? url, String iconUrl) {
     return IconButton(
       onPressed: url != null ? () => _launchUrl(url) : null,
       icon: Image.network(iconUrl, width: 50, height: 50),
     );
   }
-
-  // Helper method for typewriter animation
   TypewriterAnimatedText _typewriterText(String text) {
     return TypewriterAnimatedText(
       text,

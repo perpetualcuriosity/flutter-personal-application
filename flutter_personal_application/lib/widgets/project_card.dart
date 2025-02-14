@@ -24,7 +24,7 @@ class ProjectCard extends StatelessWidget {
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.3), // Semi-transparent black
+              color: Colors.black.withOpacity(0.3), 
               borderRadius: BorderRadius.circular(20),
               border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
               boxShadow: [
@@ -32,7 +32,7 @@ class ProjectCard extends StatelessWidget {
                   color: Colors.white.withOpacity(0.1),
                   blurRadius: 10,
                   spreadRadius: 1,
-                  offset: Offset(0, 4), // Soft shadow
+                  offset: Offset(0, 4), 
                 ),
               ],
             ),

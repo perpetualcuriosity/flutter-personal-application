@@ -1,5 +1,4 @@
 // ignore_for_file: deprecated_member_use, prefer_single_quotes
-
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_application/pages/page_home.dart';
 import 'package:flutter_personal_application/pages/page_projects.dart';
@@ -44,7 +43,6 @@ class _MainViewController extends State<MainViewController> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Responsive Toggle Buttons
                   Container(
                     width: isSmallScreen ? double.infinity : constraints.maxWidth * 0.5,
                     decoration: BoxDecoration(
@@ -64,8 +62,6 @@ class _MainViewController extends State<MainViewController> {
                     ),
                   ),
                   const SizedBox(height: 20),
-
-                  // Expanded Content Box (Ensuring It Covers Maximum Space)
                   Expanded(
                     child: Container(
                       width: double.infinity,
@@ -97,8 +93,6 @@ class _MainViewController extends State<MainViewController> {
       ),
     );
   }
-
-  // Toggle Button Builder
   Widget _buildToggleButton(String title, int index, bool isSmallScreen) {
     return Expanded(
       child: ElevatedButton(
