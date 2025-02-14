@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_application/global_theme/global_theme.dart';
-
+import 'package:flutter_personal_application/widgets/project_card.dart';
 class PageProjects extends StatefulWidget {
   const PageProjects({super.key});
   @override
@@ -22,12 +22,38 @@ class _PageProjects extends State<PageProjects> {
               style: BorderStyle.solid,
               color: Colors.white,
             )),
-            child: Column(
-                children: [
-                    
-                ],
+        child: Column(
+          children: [
+            Text(
+              'My Projects',
+              style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
             ),
+            SizedBox(height: 20),
+            Expanded(
+              child: ListView(
+                children: [
+                  ProjectCard(
+                      title: 'Flutter Personal Website',
+                      description: 'A voice-controlled personal assistant.',
+                      icon:Icons.laptop),
+                  ProjectCard(
+                      title: 'To Be Announced',
+                      description: 'Coming Soon!!!',
+                      icon:Icons.settings),
+                  ProjectCard(
+                      title: 'To Be Announced',
+                      description: 'Coming Soon!!!',
+                      icon:Icons.settings),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
+
 }
