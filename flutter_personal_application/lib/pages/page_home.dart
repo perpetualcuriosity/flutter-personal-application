@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -25,18 +24,7 @@ class _PageHome extends State<PageHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(gradient: LinearGradient(colors: col)),
-      child: Center(
-        child: Container(
-          padding: EdgeInsets.all(40),
-          margin: EdgeInsets.symmetric(horizontal: 80, vertical: 40),
-          decoration: BoxDecoration(
-            color: Color(0xff020202),
-            borderRadius: BorderRadius.circular(30),
-            border: Border.all(color: Colors.white, width: 3),
-          ),
-          child: Stack(
+    return Stack(
             children: [
               Positioned(
                 top: 20,
@@ -116,9 +104,6 @@ class _PageHome extends State<PageHome> {
                 ),
               ),
             ],
-          ),
-        ),
-      ),
-    );
+          );
   }
 }

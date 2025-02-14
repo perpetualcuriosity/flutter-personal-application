@@ -1,8 +1,5 @@
-
-
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_personal_application/global_theme/global_theme.dart';
 import 'package:flutter_fortune_wheel/flutter_fortune_wheel.dart';
 
 class PageSkills extends StatefulWidget {
@@ -17,18 +14,7 @@ class _PageSkills extends State<PageSkills> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(gradient: LinearGradient(colors: col)),
-      child: Center(
-        child: Container(
-          padding: EdgeInsets.all(40),
-          margin: EdgeInsets.symmetric(horizontal: 80, vertical: 40),
-          decoration: BoxDecoration(
-            color: Color(0xff020202),
-            borderRadius: BorderRadius.circular(30),
-            border: Border.all(color: Colors.white, width: 3),
-          ),
-          child: Row(
+    return Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -103,9 +89,6 @@ class _PageSkills extends State<PageSkills> {
                 ],
               ),
             ],
-          ),
-        ),
-      ),
-    );
+          );
   }
 }
