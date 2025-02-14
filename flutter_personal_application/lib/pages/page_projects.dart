@@ -37,7 +37,7 @@ class _PageProjects extends State<PageProjects> {
                 children: [
                   ProjectCard(
                       title: 'Flutter Personal Website',
-                      description: 'A voice-controlled personal assistant.',
+                      description: 'Personal CV Website Using Flutter.',
                       icon:Icons.laptop),
                   ProjectCard(
                       title: 'To Be Announced',
