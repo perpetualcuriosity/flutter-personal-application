@@ -47,6 +47,14 @@ class _PageProjects extends State<PageProjects> {
                       title: 'To Be Announced',
                       description: 'Coming Soon!!!',
                       icon:Icons.settings),
+                      ProjectCard(
+                      title: 'To Be Announced',
+                      description: 'Coming Soon!!!',
+                      icon:Icons.settings),
+                  ProjectCard(
+                      title: 'To Be Announced',
+                      description: 'Coming Soon!!!',
+                      icon:Icons.settings),
                 ],
               ),
             )
