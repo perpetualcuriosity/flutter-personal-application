@@ -24,15 +24,14 @@ class PageHome extends StatelessWidget {
         Positioned(
           top: 10,
           right: 10,
-          child: Row(
-            children: [
-              _buildSocialButton(_url1, 'https://img.icons8.com/?size=100&id=u9R54eMKS8fw&format=png&color=ffffff'),
-              const SizedBox(width: 10),
-              _buildSocialButton(_url2, 'https://img.icons8.com/?size=100&id=114445&format=png&color=ffffff'),
-              const SizedBox(width: 10),
-              _buildSocialButton(null, 'https://img.icons8.com/?size=100&id=EgRndDDLh8kS&format=png&color=000000'),
-            ],
-          ),
+          child: Row(children: [
+            _buildSocialButton(_url1,
+                'https://img.icons8.com/?size=100&id=u9R54eMKS8fw&format=png&color=ffffff'),
+            const SizedBox(width: 10),
+            _buildSocialButton(_url2,
+                'https://img.icons8.com/?size=100&id=114445&format=png&color=ffffff'),
+            const SizedBox(width: 10)
+          ]),
         ),
         Center(
           child: Column(
@@ -62,12 +61,14 @@ class PageHome extends StatelessWidget {
       ],
     );
   }
+
   Widget _buildSocialButton(Uri? url, String iconUrl) {
     return IconButton(
       onPressed: url != null ? () => _launchUrl(url) : null,
       icon: Image.network(iconUrl, width: 50, height: 50),
     );
   }
+
   TypewriterAnimatedText _typewriterText(String text) {
     return TypewriterAnimatedText(
       text,
