@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, prefer_single_quotes
+
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_application/pages/page_home.dart';
 import 'package:flutter_personal_application/pages/page_projects.dart';
