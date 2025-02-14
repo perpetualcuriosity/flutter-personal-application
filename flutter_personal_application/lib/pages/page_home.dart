@@ -2,20 +2,15 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter_personal_application/global_theme/global_theme.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_personal_application/global_theme/global_theme.dart';
 
-class PageHome extends StatefulWidget {
-  const PageHome({super.key});
+class PageHome extends StatelessWidget {
+  PageHome({super.key});
 
-  @override
-  State<PageHome> createState() => _PageHome();
-}
-
-class _PageHome extends State<PageHome> {
   final Uri _url1 = Uri.parse('https://github.com/perpetualcuriosity');
   final Uri _url2 = Uri.parse('https://www.linkedin.com/in/jashupadhyay/');
-  final Uri _url3 = Uri.parse('https://www.linkedin.com/in/jashupadhyay/');
+
   Future<void> _launchUrl(Uri url) async {
     if (!await launchUrl(url)) {
       throw Exception('Could not launch $url');
@@ -25,85 +20,70 @@ class _PageHome extends State<PageHome> {
   @override
   Widget build(BuildContext context) {
     return Stack(
+      children: [
+        // Social Links Row (Positioned at Top-Right)
+        Positioned(
+          top: 10,
+          right: 10,
+          child: Row(
             children: [
-              Positioned(
-                top: 20,
-                right: 20,
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () => _launchUrl(_url1),
-                      icon: Image.network(
-                        'https://img.icons8.com/?size=100&id=u9R54eMKS8fw&format=png&color=ffffff',
-                        width: 50,
-                        height: 50,
-                      ),
-                    ),
-                    IconButton(
-                      onPressed: () => _launchUrl(_url2),
-                      icon: Image.network(
-                        'https://img.icons8.com/?size=100&id=114445&format=png&color=ffffff',
-                        width: 50,
-                        height: 50,
-                      ),
-                    ),
-                    IconButton(
-                      onPressed: () => _launchUrl(_url3),
-                      icon: Image.network(
-                        'https://img.icons8.com/?size=100&id=EgRndDDLh8kS&format=png&color=000000',
-                        width: 50,
-                        height: 50,
-                      ),
-                    ),
-                  ],
+              _buildSocialButton(_url1, 'https://img.icons8.com/?size=100&id=u9R54eMKS8fw&format=png&color=ffffff'),
+              const SizedBox(width: 10),
+              _buildSocialButton(_url2, 'https://img.icons8.com/?size=100&id=114445&format=png&color=ffffff'),
+              const SizedBox(width: 10),
+              _buildSocialButton(null, 'https://img.icons8.com/?size=100&id=EgRndDDLh8kS&format=png&color=000000'),
+            ],
+          ),
+        ),
+
+        // Centered Content (Name & Animated Text)
+        Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Jash Upadhyay',
+                style: GoogleFonts.sourceCodePro(
+                  color: primaryTextColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 50,
                 ),
               ),
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Jash Upadhyay',
-                      style: GoogleFonts.sourceCodePro(
-                        color: col2,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 60,
-                      ),
-                    ),
-                    SizedBox(height: 20),
-                    AnimatedTextKit(
-                      animatedTexts: [
-                        TypewriterAnimatedText('Solve.',
-                            speed: Duration(milliseconds: 150),
-                            textStyle: GoogleFonts.sourceCodePro(
-                                color: col2,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40)),
-                        TypewriterAnimatedText('Code.',
-                            speed: Duration(milliseconds: 150),
-                            textStyle: GoogleFonts.sourceCodePro(
-                                color: col2,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40)),
-                        TypewriterAnimatedText('Transform.',
-                            speed: Duration(milliseconds: 150),
-                            textStyle: GoogleFonts.sourceCodePro(
-                                color: col2,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40)),
-                        TypewriterAnimatedText('Flutter Developer',
-                            speed: Duration(milliseconds: 150),
-                            textStyle: GoogleFonts.sourceCodePro(
-                                color: col2,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40)),
-                      ],
-                      isRepeatingAnimation: false,
-                    ),
-                  ],
-                ),
+              const SizedBox(height: 20),
+              AnimatedTextKit(
+                animatedTexts: [
+                  _typewriterText('Solve.'),
+                  _typewriterText('Code.'),
+                  _typewriterText('Transform.'),
+                  _typewriterText('Flutter Developer'),
+                ],
+                isRepeatingAnimation: false,
               ),
             ],
-          );
+          ),
+        ),
+      ],
+    );
+  }
+
+  // Helper method to build social buttons
+  Widget _buildSocialButton(Uri? url, String iconUrl) {
+    return IconButton(
+      onPressed: url != null ? () => _launchUrl(url) : null,
+      icon: Image.network(iconUrl, width: 50, height: 50),
+    );
+  }
+
+  // Helper method for typewriter animation
+  TypewriterAnimatedText _typewriterText(String text) {
+    return TypewriterAnimatedText(
+      text,
+      speed: const Duration(milliseconds: 150),
+      textStyle: GoogleFonts.sourceCodePro(
+        color: primaryTextColor,
+        fontWeight: FontWeight.bold,
+        fontSize: 30,
+      ),
+    );
   }
 }
