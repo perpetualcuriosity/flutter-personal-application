@@ -7,8 +7,61 @@ class PageProjects extends StatelessWidget {
   PageProjects({super.key});
 
   final List<Map<String, dynamic>> projects = const [
-    {'title': 'Flutter Personal Website', 'description': 'Personal CV Website Using Flutter.', 'icon': Icons.laptop},
-    {'title': 'To Be Announced', 'description': 'Coming Soon!!!', 'icon': Icons.settings},
+    {
+      'title': 'Flutter E-Commerce',
+      'description': 'A complete e-commerce app built in Flutter.',
+      'icon': Icons.shopping_cart
+    },
+    {
+      'title': 'Flutter Chat App',
+      'description': 'A real-time messaging app using Flutter.',
+      'icon': Icons.chat
+    },
+    {
+      'title': 'Flutter Expense Tracker',
+      'description': 'Track and manage expenses effortlessly.',
+      'icon': Icons.attach_money
+    },
+    {
+      'title': 'Flutter Travel Itinerary',
+      'description': 'Plan and organize your trips easily.',
+      'icon': Icons.travel_explore
+    },
+    {
+      'title': 'Flutter Quiz App',
+      'description': 'An interactive quiz app to test knowledge.',
+      'icon': Icons.question_answer
+    },
+    {
+      'title': 'Flutter To-Do',
+      'description': 'A task management app for better productivity.',
+      'icon': Icons.checklist
+    },
+    {
+      'title': 'Flutter Personal Website',
+      'description': 'Personal CV website using Flutter.',
+      'icon': Icons.laptop
+    },
+    {
+      'title': 'Flutter Meals',
+      'description': 'Discover and save your favorite meals.',
+      'icon': Icons.fastfood
+    },
+    {
+      'title': 'Flutter Dice Roll App',
+      'description': 'A fun dice rolling app built with Flutter.',
+      'icon': Icons.casino
+    },
+    {
+      'title': 'Flutter Counter',
+      'description': 'A simple counter app built with Flutter.',
+      'icon': Icons.exposure_plus_1
+    },
+    {
+      'title': 'Flutter Boilerplate App',
+      'description': 'A starter template for Flutter projects.',
+      'icon': Icons.code
+    },
   ];
 
   final Uri _url1 = Uri.parse('https://github.com/perpetualcuriosity');
