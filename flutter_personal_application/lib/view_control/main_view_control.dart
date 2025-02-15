@@ -17,7 +17,7 @@ class _MainViewController extends State<MainViewController> {
 
   final List<Widget> _pages = [
     PageHome(),
-    const PageProjects(),
+    PageProjects(),
     const PageSkills(),
   ];
 
